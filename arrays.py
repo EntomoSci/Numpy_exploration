@@ -3,9 +3,9 @@ import numpy as np
 
 # Creating vectors (unidimensional arrays)
 vector_a = np.arange(5) # 0 to 4 array
-vector_b = np.arange(3, 7, 1) # start, stop, step
+vector_b = np.arange(start=3, stop=7, step=1) # start, stop, step
 vector_c = np.arange(11, 1, -2)
-vector_d = np.linspace(0, 1, num=11) # Automatic step calculation with explicit array length definition (third parameter)
+vector_d = np.linspace(start=0, stop=1, num=11) # Automatic step calculation with explicit array length definition (third parameter)
 
 print(f'\nVector A:\n', vector_a)
 print(f'\nVector B:\n', vector_b)
@@ -66,4 +66,4 @@ print(f'\nFilled array B:\n{filled_array_b}')
 base = np.linspace(2, 6, 4)
 reuse_array_a = np.full_like(base, np.pi)
 
-print(f'\nReuse array A:\nBase: {base}\nTo: {reuse_array_a}\n')
+print(f'\nReusing an array:\nBase: {base}\nTo: {reuse_array_a}\n')
